@@ -34,6 +34,9 @@ git clone --depth=1 https://github.com/ysc3839/luci-proto-minieap
 # Add OpenClash
 git clone --depth=1 -b master https://github.com/vernesong/OpenClash
 
+# Add luci-app-adguardhome
+svn co https://github.com/Lienol/openwrt-package/branches/other/luci-app-adguardhome
+
 # Add ddnsto & linkease
 svn co https://github.com/linkease/nas-packages-luci/trunk/luci/luci-app-ddnsto
 svn co https://github.com/linkease/nas-packages-luci/trunk/luci/luci-app-linkease
