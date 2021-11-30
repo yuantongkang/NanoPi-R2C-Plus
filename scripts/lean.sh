@@ -32,7 +32,7 @@ git clone --depth=1 https://github.com/ysc3839/luci-proto-minieap
 # git clone https://github.com/garypang13/luci-app-bypass.git
 
 # Add OpenClash
-git clone --depth=1 -b master https://github.com/vernesong/OpenClash
+git clone https://github.com/vernesong/OpenClash
 
 # Add luci-app-adguardhome
 svn co https://github.com/Lienol/openwrt-package/branches/other/luci-app-adguardhome
@@ -184,7 +184,3 @@ echo 'net.bridge.bridge-nf-call-iptables=0' >> package/base-files/files/etc/sysc
 echo 'net.bridge.bridge-nf-call-ip6tables=0' >> package/base-files/files/etc/sysctl.conf
 echo 'net.bridge.bridge-nf-call-arptables=0' >> package/base-files/files/etc/sysctl.conf
 echo 'net.bridge.bridge-nf-filter-vlan-tagged=0' >> package/base-files/files/etc/sysctl.conf
-# Add CUPInfo
-pushd package/lean/autocore/files/arm/sbin
-cp -f $GITHUB_WORKSPACE/scripts/cpuinfo cpuinfo
-popd
