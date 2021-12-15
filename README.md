@@ -4,7 +4,7 @@
 - 账号 ：root
 - 密码：password
 - 固件下载：https://github.com/DHDAXCW/NanoPi-R2C/releases
-- 风扇链接 [点击进入](https://s.click.taobao.com/t?e=m%3D2%26s%3DgRTBGDB0YZwcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XJRAdhuF14FMQ8HNhhJnpl6RitN3%2FurF3yT0mcOGN1M6FAj1gqltKaEfKzCcEr0EW0YuhTK3FPxiHMT7yc3NZrQKSOkJV8harV3phaPbavinqGCwVfdcN0wcSpj5qSCmbA%3D)
+- 风扇链接 [点击进入](https://s.click.taobao.com/t?e=m%3D2%26s%3Dd8Ack0Lbx8McQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XJRAdhuF14FMXpyNmcFd6mT8sviUM61dt2T0mcOGN1M6FAj1gqltKaEfKzCcEr0EW0YuhTK3FPxiHMT7yc3NZrQKSOkJV8harV3phaPbavinqGCwVfdcN0wcSpj5qSCmbA%3D)
 ### 更新日志 11.05 r2c
 - 修复死机问题
 - 解决网络断流
