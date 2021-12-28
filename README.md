@@ -1,4 +1,4 @@
-# NanoPi-R2C  
+# NanoPi-R2C  NanoPi-R2C Plus
 ### 基本设置
 - 默认ip：192.168.2.1
 - 账号 ：root
