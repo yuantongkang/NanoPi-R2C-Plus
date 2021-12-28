@@ -186,7 +186,7 @@ wget -P target/linux/rockchip/armv8/base-files/etc/rc.d/ https://github.com/frie
 chmod 777 target/linux/rockchip/armv8/base-files/etc/init.d/fa-rk3328-pwmfan
 chmod 777 target/linux/rockchip/armv8/base-files/usr/bin/start-rk3328-pwm-fan.sh
 
-# Add r2s plus emmc
+# Add r2s plus+emmc
 pushd target/linux/rockchip/patches-5.4
 wget https://raw.githubusercontent.com/DHDAXCW/RK356X/master/target/linux/rockchip/patches-5.4/300-Add-r2c-plus-emmc.patch
 popd
