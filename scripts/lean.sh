@@ -5,7 +5,7 @@ svn export https://github.com/openwrt/packages/trunk/utils/runc/Makefile ./feeds
 
 # fix yt8521
 rm -rf ./target/linux/rockchip/patches-5.4/600-net-phy-Add-driver-for-Motorcomm-YT85xx-PHYs.patch
-cp -f $GITHUB_WORKSPACE/scripts/r2c.patch target/linux/rockchip/patches-5.4/r2c.patch
+cp -f $GITHUB_WORKSPACE/scripts/600-net-phy-Add-driver-for-Motorcomm-YT85xx-PHYs.patch target/linux/rockchip/patches-5.4/600-net-phy-Add-driver-for-Motorcomm-YT85xx-PHYs.patch
 
 # fix netdata
 rm -rf ./feeds/packages/admin/netdata
