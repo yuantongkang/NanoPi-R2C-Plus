@@ -3,9 +3,20 @@
 rm -rf ./feeds/packages/utils/runc/Makefile
 svn export https://github.com/openwrt/packages/trunk/utils/runc/Makefile ./feeds/packages/utils/runc/Makefile
 
+# add r2c plus boot linux
+rm -rf package/boot/uboot-rockchip
+svn co https://github.com/DHDAXCW/lsusb/trunk/uboot-rockchip package/boot/uboot-rockchip
+rm -rf target/linux/rockchip
+svn co https://github.com/DHDAXCW/lsusb/trunk/rockchip target/linux/rockchip
+
 # fix yt8521
 rm -rf ./target/linux/rockchip/patches-5.4/600-net-phy-Add-driver-for-Motorcomm-YT85xx-PHYs.patch
 cp -f $GITHUB_WORKSPACE/scripts/600-net-phy-Add-driver-for-Motorcomm-YT85xx-PHYs.patch target/linux/rockchip/patches-5.4/600-net-phy-Add-driver-for-Motorcomm-YT85xx-PHYs.patch
+
+# Add r2c plus+emmc
+pushd target/linux/rockchip/patches-5.4
+wget https://raw.githubusercontent.com/DHDAXCW/RK356X/master/target/linux/rockchip/patches-5.4/300-Add-r2c-plus-emmc.patch
+popd
 
 # fix netdata
 rm -rf ./feeds/packages/admin/netdata
@@ -191,11 +202,6 @@ wget -P target/linux/rockchip/armv8/base-files/usr/bin/ https://github.com/frien
 wget -P target/linux/rockchip/armv8/base-files/etc/rc.d/ https://github.com/friendlyarm/friendlywrt/raw/master-v19.07.1/target/linux/rockchip-rk3328/base-files/etc/rc.d/S96fa-rk3328-pwmfan
 chmod 777 target/linux/rockchip/armv8/base-files/etc/init.d/fa-rk3328-pwmfan
 chmod 777 target/linux/rockchip/armv8/base-files/usr/bin/start-rk3328-pwm-fan.sh
-
-# Add r2s plus+emmc
-pushd target/linux/rockchip/patches-5.4
-wget https://raw.githubusercontent.com/DHDAXCW/RK356X/master/target/linux/rockchip/patches-5.4/300-Add-r2c-plus-emmc.patch
-popd
 
 # Change default shell to zsh
 sed -i 's/\/bin\/ash/\/usr\/bin\/zsh/g' package/base-files/files/etc/passwd
