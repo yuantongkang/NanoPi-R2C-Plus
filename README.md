@@ -13,7 +13,9 @@
 - eMMC唯一路径为 /dev/mmcblk0 
 - 执行写盘 ``dd if=/mnt/sda1/gujian.img of=/dev/mmcblk0 bs=1M ``
 - 写入完成后建议执行 ``sync`` 结束后可以重启拔了U盘和tf卡
+
 ## 清除idbloader
+
 - 分区也清了，这样就不会从emmc启动了
 - 执行 ``dd if=/dev/zero of=/dev/mmcblk0 bs=8M count=1``
 
