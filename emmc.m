@@ -1,7 +1,12 @@
+将固件下载，解压后命名为gujian.img复制到U盘当前路径
+
+插入U盘到r2c plus 开机。
+
+U盘输出路径/mnt/sda1/gujian.img  建议给固件命名gujian.img
+
+执行写盘
 
 dd if=/mnt/sda1/gujian.img of=/dev/mmcblk0 bs=1M 
-      
-      U盘输出/mnt/sda1/gujian.img  建议给固件命名gujian.img
       
       eMMC唯一路径为 /dev/mmcblk0 
       
