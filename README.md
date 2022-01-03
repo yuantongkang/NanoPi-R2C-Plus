@@ -14,6 +14,10 @@
 - 执行写盘 ``dd if=/mnt/sda1/gujian.img of=/dev/mmcblk0 bs=1M ``
 - 写入完成后建议执行 ``sync`` 结束后可以重启拔了U盘和tf卡
 
+如果写盘过程中遇到麻烦，建议反馈到lssues 我在写盘过程中遇到砖头了，可提供救砖方法
+
+注：不建议其他固件与不匹配的设备写入到emmc上，否则sd卡开机无法加载内核！
+
 # [赏个鸡腿吧](https://afdian.net/@dhdaxcw/plan)
 ### https://afdian.net/@dhdaxcw/plan
 ![2021-08-16 15-28-16 的屏幕截图](https://user-images.githubusercontent.com/74764072/129526839-5f3d9679-b269-4434-8f34-37209436c785.png)
