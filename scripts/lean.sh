@@ -12,7 +12,6 @@ svn co https://github.com/DHDAXCW/lsusb/trunk/rockchip target/linux/rockchip
 # fix yt8521
 rm -rf ./target/linux/rockchip/patches-5.4/600-net-phy-Add-driver-for-Motorcomm-YT85xx-PHYs.patch
 cp -f $GITHUB_WORKSPACE/scripts/600-net-phy-Add-driver-for-Motorcomm-YT85xx-PHYs.patch target/linux/rockchip/patches-5.4/600-net-phy-Add-driver-for-Motorcomm-YT85xx-PHYs.patch
-cp -f $GITHUB_WORKSPACE/scripts/203-rockchip-rk3328-Fix-spl-mmc-boot-device-ofpath package/boot/uboot-rockchip/patches/203-rockchip-rk3328-Fix-spl-mmc-boot-device-ofpath
 
 # Add r2c plus+emmc
 pushd target/linux/rockchip/patches-5.4
