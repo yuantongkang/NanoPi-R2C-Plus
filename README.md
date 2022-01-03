@@ -25,4 +25,4 @@
 
 # [赏个鸡腿吧](https://afdian.net/@dhdaxcw/plan)
 ### https://afdian.net/@dhdaxcw/plan
-![2021-08-16 15-28-16 的屏幕截图](https://user-images.githubusercontent.com/74764072/129526839-5f3d9679-b269-4434-8f34-37209436c785.png)
+![r](https://user-images.githubusercontent.com/74764072/147954828-f1870dcf-6144-48e2-b960-8c5652868595.jpg)
